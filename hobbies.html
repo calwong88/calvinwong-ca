@@ -14,7 +14,7 @@ description: A look at Calvin Wong's hobbies and interests outside of work.
   <div class="card-grid">
     <div class="card">
       <a href="{{ '/hobbies/hiking/' | relative_url }}">
-        <img src="{{ '/assets/images/hiking-square.jpg' | relative_url }}" alt="Hiking">
+        {% include picture.html src="hiking-square" alt="Hiking" %}
       </a>
       <div class="card-body">
         <h3>Hiking &amp; the Outdoors</h3>
@@ -23,7 +23,7 @@ description: A look at Calvin Wong's hobbies and interests outside of work.
     </div>
     <div class="card">
       <a href="{{ '/hobbies/travel/' | relative_url }}">
-        <img src="{{ '/assets/images/halifax-travel-square.jpg' | relative_url }}" alt="Travel">
+        {% include picture.html src="halifax-travel-square" alt="Travel" %}
       </a>
       <div class="card-body">
         <h3>Travel</h3>
@@ -32,7 +32,7 @@ description: A look at Calvin Wong's hobbies and interests outside of work.
     </div>
     <div class="card">
       <a href="{{ '/hobbies/food/' | relative_url }}">
-        <img src="{{ '/assets/images/sushi-square.jpg' | relative_url }}" alt="Food and cooking">
+        {% include picture.html src="sushi-square" alt="Food and cooking" %}
       </a>
       <div class="card-body">
         <h3>Food &amp; Cooking</h3>
@@ -41,7 +41,7 @@ description: A look at Calvin Wong's hobbies and interests outside of work.
     </div>
     <div class="card">
       <a href="{{ '/hobbies/friends/' | relative_url }}">
-        <img src="{{ '/assets/images/friends-chilling-square.jpg' | relative_url }}" alt="Friends and downtime">
+        {% include picture.html src="friends-chilling-square" alt="Friends and downtime" %}
       </a>
       <div class="card-body">
         <h3>Friends &amp; Downtime</h3>
@@ -50,7 +50,7 @@ description: A look at Calvin Wong's hobbies and interests outside of work.
     </div>
     <div class="card">
       <a href="{{ '/hobbies/community/' | relative_url }}">
-        <img src="{{ '/assets/images/dock-install-square.jpg' | relative_url }}" alt="Community and volunteering">
+        {% include picture.html src="dock-install-square" alt="Community and volunteering" %}
       </a>
       <div class="card-body">
         <h3>Community &amp; Volunteering</h3>
