@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">Calvin Wong</a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+        <li><a href="{{ '/resume/' | relative_url }}" {% if page.url contains 'resume' %}class="active"{% endif %}>Resume</a></li>
+        <li><a href="{{ '/hobbies/' | relative_url }}" {% if page.url contains 'hobbies' %}class="active"{% endif %}>Hobbies</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
