@@ -6,7 +6,7 @@ description: Calvin Wong — entry-level cybersecurity analyst candidate and fin
 ---
 
 <section class="hero">
-  <img class="avatar" src="{{ '/assets/images/office-selfie-square.jpg' | relative_url }}" alt="Calvin Wong">
+  {% include picture.html src="office-selfie-square" alt="Calvin Wong" class="avatar" %}
   <h1>Calvin Wong</h1>
   <p class="tagline">Entry-Level Cybersecurity Analyst &middot; Identity &amp; Access Management &middot; Financial Services Operations</p>
   <div class="cta-row">
@@ -32,6 +32,18 @@ description: Calvin Wong — entry-level cybersecurity analyst candidate and fin
 </section>
 
 <section>
+  <h2>Why Cybersecurity</h2>
+  <p>
+    Every role I've held in banking has come down to the same core responsibility: protecting information that isn't
+    mine, exactly the way it's supposed to be protected. Reviewing client documentation, catching discrepancies
+    before they become problems, keeping records audit-ready &mdash; that's security work, even when the job title
+    says "operations." Certifications gave me the vocabulary and frameworks to match; my own IAM and cloud-security
+    labs (see <a href="{{ '/projects/' | relative_url }}">Projects</a>) gave me the hands-on practice. Cybersecurity
+    is the natural next step, not a pivot.
+  </p>
+</section>
+
+<section>
   <h2>Quick Links</h2>
   <div class="card-grid">
     <div class="card">
@@ -39,6 +51,13 @@ description: Calvin Wong — entry-level cybersecurity analyst candidate and fin
         <h3>Resume</h3>
         <p>My professional background, certifications, and technical skills.</p>
         <p><a href="{{ '/resume/' | relative_url }}">Read more &rarr;</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3>Projects</h3>
+        <p>Hands-on IAM, cloud-security, and automation labs on GitHub.</p>
+        <p><a href="{{ '/projects/' | relative_url }}">Read more &rarr;</a></p>
       </div>
     </div>
     <div class="card">
