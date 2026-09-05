@@ -10,12 +10,13 @@ description: Calvin Wong enjoys sushi and barbecuing with friends.
 </section>
 
 <div class="hobby-detail">
-  <img src="{{ '/assets/images/sushi-wide.jpg' | relative_url }}" alt="Calvin enjoying sushi">
-  <p>Sushi is my go-to &mdash; if it's on the menu, I'm ordering it.</p>
-  <img src="{{ '/assets/images/bbq-retreat-wide.jpg' | relative_url }}" alt="Calvin barbecuing at the retreat">
+  {% include picture.html src="sushi-wide" alt="Calvin enjoying a plate of sushi at a restaurant" %}
+  <p>Sushi is my go-to &mdash; if it's on the menu, I'm ordering it. Fresh, simple, and never disappointing.</p>
+  {% include picture.html src="bbq-retreat-wide" alt="Calvin barbecuing food on a grill at the retreat" %}
   <p>
     I'm just as happy on the other side of the grill. I've done my share of barbecuing for the group at the
-    retreat &mdash; good food is a great way to bring people together.
+    retreat &mdash; good food is a great way to bring people together, and there's a satisfaction in feeding a
+    crowd well.
   </p>
 </div>
 
