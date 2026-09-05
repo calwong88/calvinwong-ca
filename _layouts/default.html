@@ -5,11 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {% endif %}Calvin Wong</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://*.goatcounter.com; frame-ancestors 'none'; base-uri 'self';">
+
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}Calvin Wong">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/images/office-selfie-square.jpg' | absolute_url }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}Calvin Wong">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ '/assets/images/office-selfie-square.jpg' | absolute_url }}">
+
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Calvin Wong",
+    "url": "https://calvinwong.ca",
+    "jobTitle": "Entry-Level Cybersecurity Analyst",
+    "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA" },
+    "email": "mailto:iam@calvinwong.ca",
+    "sameAs": ["https://www.linkedin.com/in/calvinkmwong", "https://github.com/calwong88"]
+  }
+  </script>
+
+  <!-- Privacy-friendly analytics (GoatCounter). Replace YOUR-CODE once you've created a free account at goatcounter.com. -->
+  <!-- <script data-goatcounter="https://YOUR-CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   {% include header.html %}
-  <main>
+  <main id="main-content">
     {{ content }}
   </main>
   {% include footer.html %}
