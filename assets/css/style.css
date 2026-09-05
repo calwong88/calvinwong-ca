@@ -1,0 +1,217 @@
+:root {
+  --navy: #1f3a5f;
+  --navy-dark: #142942;
+  --accent: #2e7d7d;
+  --bg: #f7f8fa;
+  --text: #2b2f36;
+  --muted: #5a6270;
+  --card-bg: #ffffff;
+  --radius: 10px;
+  --max-width: 960px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Calibri, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header.site-header {
+  background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+  color: #fff;
+  padding: 1.1rem 1.5rem;
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+nav.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.4rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav.main-nav a {
+  color: #e8edf3;
+  font-weight: 600;
+}
+
+nav.main-nav a:hover,
+nav.main-nav a.active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.2rem 1.5rem 3rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 2.5rem 1rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  color: var(--navy);
+  margin-bottom: 0.3rem;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.18);
+  margin-bottom: 1rem;
+  border: 3px solid #fff;
+}
+
+.hero p.tagline {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.65rem 1.3rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  margin: 0.4rem;
+}
+.button:hover { background: #24605f; text-decoration: none; }
+.button.secondary {
+  background: transparent;
+  border: 2px solid var(--navy);
+  color: var(--navy);
+}
+.button.secondary:hover { background: var(--navy); color: #fff; }
+
+.cta-row { text-align: center; margin: 1.5rem 0 2.5rem; }
+
+section { margin-bottom: 2.5rem; }
+
+section h2 {
+  color: var(--navy);
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.4rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 6px 16px rgba(0,0,0,0.12); }
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  filter: saturate(0.95);
+}
+
+.card .card-body { padding: 1rem 1.1rem 1.3rem; }
+.card h3 { margin: 0 0 0.4rem; color: var(--navy); }
+.card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+.job { margin-bottom: 1.6rem; }
+.job h3 { margin-bottom: 0.1rem; color: var(--navy); }
+.job .meta { color: var(--muted); font-style: italic; font-size: 0.92rem; margin-top: 0; margin-bottom: 0.5rem; }
+.job ul { margin-top: 0.3rem; }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+.skills-grid .skill-block {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.skill-block h4 { margin: 0 0 0.4rem; color: var(--navy); font-size: 1rem; }
+.skill-block p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+.resume-actions { text-align: center; margin: 1.2rem 0 2rem; }
+
+.contact-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 480px;
+  margin: 0 auto;
+}
+.contact-card p { margin: 0.5rem 0; }
+.contact-card .icon-label { font-weight: 600; color: var(--navy); }
+
+.hobby-detail img {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto 1.2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.placeholder-note {
+  background: #fff7e0;
+  border: 1px solid #e8d488;
+  color: #6b5a12;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+footer.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.6rem; }
+  nav.main-nav ul { gap: 0.9rem; justify-content: center; }
+}
