@@ -4,7 +4,7 @@
 (function () {
   // TODO: replace with your deployed Cloudflare Worker URL, e.g.
   // "https://calvinwong-contact.YOURSUBDOMAIN.workers.dev"
-  var RELAY_ENDPOINT = "";
+  var RELAY_ENDPOINT = "https://calvinwong-contact.cwong76.workers.dev/";
 
   var form = document.getElementById("contact-form");
   if (!form) return;
