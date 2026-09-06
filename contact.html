@@ -16,3 +16,30 @@ description: Contact Calvin Wong by email or phone.
   <p><span class="icon-label">Location:</span> Toronto, Canada</p>
   <p><span class="icon-label">LinkedIn:</span> <a href="https://www.linkedin.com/in/calvinkmwong" target="_blank" rel="noopener">linkedin.com/in/calvinkmwong</a></p>
 </div>
+
+<section>
+  <h2>Send a Message</h2>
+  <form id="contact-form" class="contact-form" novalidate>
+    <div class="form-row">
+      <label for="cf-name">Name</label>
+      <input type="text" id="cf-name" name="name" autocomplete="name" required>
+    </div>
+    <div class="form-row">
+      <label for="cf-email">Email</label>
+      <input type="email" id="cf-email" name="email" autocomplete="email" required>
+    </div>
+    <div class="form-row">
+      <label for="cf-message">Message</label>
+      <textarea id="cf-message" name="message" rows="5" required></textarea>
+    </div>
+    <!-- Honeypot field: hidden from real visitors, bots tend to fill it in anyway. -->
+    <div class="form-row hp-field" aria-hidden="true">
+      <label for="cf-company">Company</label>
+      <input type="text" id="cf-company" name="company" tabindex="-1" autocomplete="off">
+    </div>
+    <button type="submit" class="button">Send Message</button>
+    <p id="contact-form-status" class="form-status" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<script src="{{ '/assets/js/contact.js' | relative_url }}"></script>

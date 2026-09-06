@@ -233,6 +233,34 @@ section h2 {
 .contact-card p { margin: 0.5rem 0; }
 .contact-card .icon-label { font-weight: 600; color: var(--navy); }
 
+.contact-form { max-width: 480px; }
+.contact-form .form-row { margin-bottom: 1rem; display: flex; flex-direction: column; gap: 0.3rem; }
+.contact-form label { font-weight: 600; font-size: 0.9rem; }
+.contact-form input,
+.contact-form textarea {
+  font: inherit;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--navy);
+  border-radius: calc(var(--radius) / 2);
+  background: var(--card-bg);
+  color: var(--text);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.contact-form .hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.contact-form .form-status { margin-top: 0.8rem; font-size: 0.9rem; min-height: 1.2em; }
+.contact-form .form-status.success { color: var(--accent); }
+.contact-form .form-status.error { color: #b3261e; }
+
 .hobby-detail img {
   width: 100%;
   max-width: 700px;
@@ -311,7 +339,44 @@ footer.site-footer {
   font-size: 0.8rem;
 }
 
+.section-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+.utility-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.utility-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--navy);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  margin-bottom: 0.6rem;
+}
+.utility-list .utility-name {
+  font-weight: 600;
+}
+.utility-list .utility-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  flex: 1 1 auto;
+}
+.utility-list a {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
 @media (max-width: 600px) {
+  .utility-list li { flex-direction: column; align-items: flex-start; gap: 0.15rem; }
   .hero h1 { font-size: 1.6rem; }
   .nav-toggle-label { display: block; position: absolute; right: 1.5rem; top: 1.1rem; }
   nav.main-nav {
