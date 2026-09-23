@@ -2,7 +2,7 @@
 layout: default
 title: Resume
 permalink: /resume/
-description: Calvin Wong's resume — entry-level cybersecurity analyst candidate with financial services operations experience.
+description: Calvin Wong's resume: entry-level cybersecurity analyst candidate with financial services operations experience.
 ---
 
 <section class="hero" style="padding-top:0;">
@@ -23,7 +23,7 @@ description: Calvin Wong's resume — entry-level cybersecurity analyst candidat
     supporting audit and risk review within a leading Canadian wealth-management organization. Certified in security
     fundamentals (CompTIA Security+, SecAI+) and identity and access management (Microsoft Identity and Access
     Administrator Associate), complemented by hands-on Python, SQL, and Azure experience. Recognized for sustained
-    focus, reliability, and sound judgment when handling sensitive information &mdash; well suited to entry-level
+    focus, reliability, and sound judgment when handling sensitive information, and well suited to entry-level
     security operations, IAM, or risk-and-compliance analyst roles within Canadian financial institutions.
   </p>
 </section>
@@ -32,20 +32,20 @@ description: Calvin Wong's resume — entry-level cybersecurity analyst candidat
   <h2>Professional Experience</h2>
 
   <div class="job">
-    <h3>Private Banking Operations Associate &mdash; BMO Private Wealth Management</h3>
+    <h3>Private Banking Operations Associate &middot; BMO Private Wealth Management</h3>
     <p class="meta">Toronto, ON &middot; Jun 2025 &ndash; Present</p>
     <ul>
       <li>Safeguard confidential client information while processing account openings, maintenance, and service requests for high-net-worth clients, applying strict access-control and confidentiality standards.</li>
       <li>Recognized by branch leadership for efficiently opening six Ultra-High-Net-Worth (UHNW) client accounts within a compressed timeframe, prompting a nomination for the firm's Grand Ovation recognition award and commendation directly to management.</li>
-      <li>Identified a manual, error-prone bottleneck in document processing and proposed an AI-assisted document-review agent to leadership &mdash; accepted for implementation to reduce account-processing time and ease the manual workload contributing to staff fatigue (prototyped independently as the <a href="{{ '/projects/' | relative_url }}">Account Onboarding Agent</a> project).</li>
-      <li>Review sensitive client documentation and financial records to verify eligibility, detect discrepancies, and support resolution in accordance with banking policy and regulatory requirements &mdash; skills directly transferable to security incident triage and compliance review.</li>
+      <li>Identified a manual, error-prone bottleneck in document processing and proposed an AI-assisted document-review agent to leadership, which was accepted for implementation to reduce account-processing time and ease the manual workload contributing to staff fatigue (prototyped independently as the <a href="{{ '/projects/' | relative_url }}">Account Onboarding Agent</a> project).</li>
+      <li>Review sensitive client documentation and financial records to verify eligibility, detect discrepancies, and support resolution in accordance with banking policy and regulatory requirements; these skills transfer directly to security incident triage and compliance review.</li>
       <li>Maintain audit-ready, organized client records that support internal risk and audit reviews, reflecting strong attention to data integrity and traceability.</li>
       <li>Collaborate discreetly and reliably with relationship managers and wealth advisors, consistently handling privileged information with professionalism.</li>
     </ul>
   </div>
 
   <div class="job">
-    <h3>Senior Process Analyst &ndash; Managed Product Services &mdash; BMO Wealth Management</h3>
+    <h3>Senior Process Analyst, Managed Product Services &middot; BMO Wealth Management</h3>
     <p class="meta">Toronto, ON &middot; Sep 2022 &ndash; May 2025</p>
     <ul>
       <li>Reviewed managed-program accounts for policy deficiencies, applying a meticulous, security-conscious approach to identify exceptions before they became risk issues.</li>
@@ -55,20 +55,20 @@ description: Calvin Wong's resume — entry-level cybersecurity analyst candidat
   </div>
 
   <div class="job">
-    <h3>Client Account Administrator &mdash; BMO InvestorLine</h3>
+    <h3>Client Account Administrator &middot; BMO InvestorLine</h3>
     <p class="meta">Toronto, ON &middot; Mar 2022 &ndash; Aug 2022</p>
     <ul>
       <li>Maintained and secured physical and digital client records, applying compliance-driven retention and retrieval standards.</li>
       <li>Provided front-line technical support for document-imaging systems, troubleshooting access and system issues under time pressure.</li>
-      <li>Helped design improved document-management procedures &mdash; an early example of process- and control-improvement work.</li>
+      <li>Helped design improved document-management procedures, an early example of process- and control-improvement work.</li>
     </ul>
   </div>
 
   <div class="job">
-    <h3>Developer &mdash; Maximilian Family Fund</h3>
+    <h3>Developer &middot; Maximilian Family Fund</h3>
     <p class="meta">Toronto, ON &middot; Apr 2020 &ndash; Apr 2022</p>
     <ul>
-      <li>Built data-analytics tooling in Python (MongoDB, MySQL, Kibana) to detect statistical anomalies in large datasets &mdash; experience directly relevant to security analytics and anomaly/threat detection.</li>
+      <li>Built data-analytics tooling in Python (MongoDB, MySQL, Kibana) to detect statistical anomalies in large datasets, experience directly relevant to security analytics and anomaly/threat detection.</li>
       <li>Applied statistical fraud-detection techniques, including Benford's Law, to flag irregular data patterns, foundational experience for fraud- and security-analytics work.</li>
       <li>Created custom data-collection tooling (Beautiful Soup) for independent research from complex sources.</li>
       <li>Built a Tableau dashboard enabling drill-down analysis of operational data, reflecting strong data-visualization and reporting skills applicable to security dashboards and reporting.</li>
@@ -80,11 +80,11 @@ description: Calvin Wong's resume — entry-level cybersecurity analyst candidat
   <h2>Projects</h2>
 
   <div class="job">
-    <h3>Stale Account Detector &mdash; Python Access-Governance Tool</h3>
+    <h3>Stale Account Detector &middot; Python Access-Governance Tool</h3>
     <p class="meta">2026 &middot; <a href="https://github.com/calwong88/stale-account-detector" target="_blank" rel="noopener">github.com/calwong88/stale-account-detector</a></p>
     <ul>
-      <li>Built a command-line tool that evaluates a directory export against six detection rules and produces a severity-ranked findings report &mdash; targeting the standing, unmonitored access that surfaces as findings in SOX and OSFI access reviews.</li>
-      <li>Implemented rules covering stale member and guest sign-ins, accounts never used since creation, disabled accounts still consuming paid licenses, enabled accounts with no manager, and guest invitations never redeemed &mdash; each finding rated by severity and written with enough detail for a reviewer to act on.</li>
+      <li>Built a command-line tool that evaluates a directory export against six detection rules and produces a severity-ranked findings report, targeting the standing, unmonitored access that surfaces as findings in SOX and OSFI access reviews.</li>
+      <li>Implemented rules covering stale member and guest sign-ins, accounts never used since creation, disabled accounts still consuming paid licenses, enabled accounts with no manager, and guest invitations never redeemed, with each finding rated by severity and written with enough detail for a reviewer to act on.</li>
       <li>Scoped the CSV loader as the only component that touches raw input, converting every field to a typed record before evaluation, so a Microsoft Graph loader could run the same rules against a live Entra ID tenant without changing another module.</li>
       <li>Made reports reproducible by passing the evaluation date into each rule rather than reading the system clock, and covered all six rules with 14 unit tests, including negative cases proving the tool does not flag newly created accounts inside their grace period.</li>
     </ul>
@@ -115,7 +115,7 @@ description: Calvin Wong's resume — entry-level cybersecurity analyst candidat
 
 <section>
   <h2>Certifications</h2>
-  <p>Building a full security credential stack &mdash; Security+, A+, IAM Associate, and SecAI+ all earned:</p>
+  <p>Building a full security credential stack: Security+, A+, IAM Associate, and SecAI+ all earned:</p>
   <ul class="cert-timeline">
     <li class="earned"><span class="cert-date">Jul 2020</span><span class="cert-name">Microsoft Azure Fundamentals</span></li>
     <li class="earned"><span class="cert-date">Sep 2020</span><span class="cert-name">Microsoft Azure Administrator Associate</span></li>
@@ -142,7 +142,7 @@ description: Calvin Wong's resume — entry-level cybersecurity analyst candidat
 <section>
   <h2>Education</h2>
   <ul>
-    <li>Advanced Diploma, Marketing &mdash; George Brown College, ON (2007 &ndash; 2010)</li>
-    <li>Advanced Diploma, Paramedicine (partial) &mdash; BizTech Institute College, ON (2015 &ndash; 2017)</li>
+    <li>Advanced Diploma, Marketing, George Brown College, ON (2007&ndash;2010)</li>
+    <li>Advanced Diploma, Paramedicine (partial), BizTech Institute College, ON (2015&ndash;2017)</li>
   </ul>
 </section>

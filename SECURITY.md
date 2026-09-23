@@ -1,7 +1,7 @@
 # Security Policy
 
 This repository hosts a static personal website (resume, portfolio, hobbies) with no server-side
-code, database, or user input handling — the attack surface is intentionally minimal.
+code, database, or user input handling, so the attack surface is intentionally minimal.
 
 ## Reporting a Vulnerability
 
