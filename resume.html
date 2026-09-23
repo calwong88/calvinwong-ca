@@ -77,6 +77,21 @@ description: Calvin Wong's resume — entry-level cybersecurity analyst candidat
 </section>
 
 <section>
+  <h2>Projects</h2>
+
+  <div class="job">
+    <h3>Stale Account Detector &mdash; Python Access-Governance Tool</h3>
+    <p class="meta">2026 &middot; <a href="https://github.com/calwong88/stale-account-detector" target="_blank" rel="noopener">github.com/calwong88/stale-account-detector</a></p>
+    <ul>
+      <li>Built a command-line tool that evaluates a directory export against six detection rules and produces a severity-ranked findings report &mdash; targeting the standing, unmonitored access that surfaces as findings in SOX and OSFI access reviews.</li>
+      <li>Implemented rules covering stale member and guest sign-ins, accounts never used since creation, disabled accounts still consuming paid licenses, enabled accounts with no manager, and guest invitations never redeemed &mdash; each finding rated by severity and written with enough detail for a reviewer to act on.</li>
+      <li>Scoped the CSV loader as the only component that touches raw input, converting every field to a typed record before evaluation, so a Microsoft Graph loader could run the same rules against a live Entra ID tenant without changing another module.</li>
+      <li>Made reports reproducible by passing the evaluation date into each rule rather than reading the system clock, and covered all six rules with 14 unit tests, including negative cases proving the tool does not flag newly created accounts inside their grace period.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
   <h2>Core Competencies</h2>
   <div class="skills-grid">
     <div class="skill-block">
